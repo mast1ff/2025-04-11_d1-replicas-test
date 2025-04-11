@@ -1,0 +1,17 @@
+{
+	"name": "2025-04-11-d1-replicas-test",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy --minify",
+		"type:check": "tsc --noEmit",
+		"type:gen": "wrangler types --env-interface CloudflareBindings"
+	},
+	"dependencies": {
+		"hono": "^4.7.6"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20250410.0",
+		"typescript": "^5.8.3",
+		"wrangler": "^4.10.0"
+	}
+}

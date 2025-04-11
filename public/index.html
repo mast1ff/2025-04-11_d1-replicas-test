@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>2025-04-11 D1 Replicas Test</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f4f4f4;
+			}
+
+			h1 {
+				text-align: center;
+				margin-top: 20px;
+			}
+
+			.container {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 20px;
+				padding: 20px;
+			}
+
+			data-fetcher {
+				display: block;
+				background-color: white;
+				border-radius: 8px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>2025-04-11 D1 Replicas Test</h1>
+		<div class="container">
+			<data-fetcher url="/replica" title="with Replica"></data-fetcher>
+			<data-fetcher url="/no-replica" title="without Replica"></data-fetcher>
+		</div>
+
+		<script type="module" src="/fetch.js"></script>
+	</body>
+</html>
