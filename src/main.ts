@@ -43,6 +43,11 @@ app.get("/no-replica", async (c) => {
 	});
 });
 
+app.onError((err, c) => {
+	console.error(err);
+	return c.json({ error: "Internal Server Error" }, 500);
+});
+
 export default {
 	fetch: app.fetch,
 } satisfies ExportedHandler<CloudflareBindings>;
